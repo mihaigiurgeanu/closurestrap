@@ -12,6 +12,39 @@ Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and
 
 To get started, check out <http://getbootstrap.com>!
 
+## Google Closure Library support
+
+This project is a fork of [original bootstrap](https://github.com/twbs/bootstrap)
+library and includes Javascript support for both, jQuery and
+Google Closure Library frameworks. If you are using the Javascript features
+you need to include either the scripts supporting jQuery or the scirpts
+for supporting Google Closure Library.
+
+The objective of this fork is to keep up to date the support for Google Closure Library.
+
+### Rationale for Google Closure Library support
+
+The need for this project came from using
+[Twitter Bootstrap](http://getbootstrap.com/) in
+[clojurescript](https://github.com/clojure/clojurescript) projects.
+Since it is no problem using the current version of bootstap with these
+projects, it would be nice to replace the requested jQuery with Google
+Closure Library because:
+
+-   Google Closure Library is already used by the clojurescript compiler and,
+therefore, it is already included with your clojurescript application.
+-   Usually, you will not be using jQuery with your clojurescript application.
+-   Using the Google Closure Library support for bootstap instead of jQuery
+will enable you to only use standard [Leiningen](http://leiningen.org/)
+or [boot](http://boot-clj.com/) build scripts to manage project dependencies.
+	
+### The status of Google Closure Library support
+
+No development yet.
+
+Just forked the original bootstrap project and added info about the
+[clojurestrap](https://github.com/mihaigiurgeanu/closurestrap)
+project to the `README.md` file. 
 
 ## Table of contents
 
